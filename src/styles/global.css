@@ -2,7 +2,12 @@ html {
     background-color: #f1f5f9;
     font-family: sans-serif;
   }
-  
+
+  html.dark {
+    background-color: #000000;
+    color: #fff;
+  }
+
   body {
     margin: 0 auto;
     width: 100%;
@@ -10,12 +15,40 @@ html {
     padding: 1rem;
     line-height: 1.5;
   }
-  
+
   * {
     box-sizing: border-box;
   }
-  
+
   h1 {
     margin: 1rem 0;
     font-size: 2.5rem;
   }
+
+  .Top_Page {
+    width: 100%;
+    top: 5rem;
+    left: 48px;
+    background-color: #ff9776;
+    display: none;
+    margin: 0;
+  }
+
+  .Top_Page a {
+    display: block;
+    text-align: center;
+  }
+
+  .expanded {
+    display: unset;
+  }
+
+@media screen and (min-width: 636px) {
+  .Top_Page {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+}
