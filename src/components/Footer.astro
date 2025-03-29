@@ -1,5 +1,7 @@
 ---
 import Guitar from '../assets/Guitars 3.png';
+import Cover from '../assets/Final_Cover.jpg';
+import tiktok from '../assets/tiktok_logo.png';
 ---
 
 <!-- ============================================ -->
@@ -15,21 +17,15 @@ import Guitar from '../assets/Guitars 3.png';
                 <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src={Guitar.src} alt="" width="240" height="32">
             </a>
             <div class="cs-social">
-                <a class="cs-social-link" aria-label="visit google profile" href="">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
-                </a>
-                <a class="cs-social-link" aria-label="visit facebook profile" href="">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
-                </a>
-                <a class="cs-social-link" aria-label="visit instagram profile" href="">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                <a class="cs-social-link" aria-label="visit tik tock" href="www.tiktok.com">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src={tiktok.src} alt="tiktok" width="11" height="11">
                 </a>
             </div>
         </div>
         <!-- Links -->
         <ul class="cs-nav">
             <li class="cs-nav-li">
-                <span class="cs-header">Contact</span>
+                <span class="cs-header">Contact:</span>
             </li>
             <li class="cs-nav-li">
                 <a class="cs-nav-link" href="mailto:contact@kimberlymacnider.com">contact@kimberlymacnider.com</a>
@@ -161,9 +157,10 @@ body {
         align-items: center;
         position: relative;
         z-index: 1;
+        margin-left: .3em;
         transition:
-            transform 0.3s,
-            background-color 0.3s;
+        transform 0.3s,
+        background-color 0.3s;
     }
     #cs-footer-274 .cs-social-link:hover {
         background-color: var(--primary);
@@ -181,7 +178,7 @@ body {
     #cs-footer-274 .cs-nav-li {
         list-style: none;
         margin: 0;
-        margin-top: 10%;
+        margin-top: 16%;
         color: var(--bodyTextColor);
     }
     #cs-footer-274 .cs-header {
@@ -218,6 +215,8 @@ body {
         width: 100%;
     }
 }
+
+
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #cs-footer-274 .cs-container {
