@@ -1,5 +1,5 @@
 ---
-
+import Guitar from '../assets/Guitars 3.png';
 ---
 
 <!-- ============================================ -->
@@ -12,7 +12,7 @@
         <div class="cs-logo-group">
             <a aria-label="" class="" href="">
                 <!-- Remove the light class if you don't need the dark logo -->
-                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="" alt="" width="240" height="32">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src={Guitar.src} alt="" width="240" height="32">
             </a>
             <div class="cs-social">
                 <a class="cs-social-link" aria-label="visit google profile" href="">
@@ -140,7 +140,7 @@ body {
     }
     #cs-footer-274 .cs-logo-img {
         width: 100%;
-        height: auto;
+        height: 50px;
     }
     #cs-footer-274 .cs-social {
         display: inline-flex;
@@ -181,6 +181,7 @@ body {
     #cs-footer-274 .cs-nav-li {
         list-style: none;
         margin: 0;
+        margin-top: 10%;
         color: var(--bodyTextColor);
     }
     #cs-footer-274 .cs-header {
