@@ -1,6 +1,7 @@
 ---
 import Taylor_Snake from '../assets/taylor snake.png';
 import Book from '../assets/book.png';
+import Confetti from '../assets/Confetti.png';
 ---
 
 
@@ -13,47 +14,16 @@ import Book from '../assets/book.png';
         <div class="cs-content">
             <span class="cs-topper">Kimberly Macnider</span>
             <h2 class="cs-title">
-                <span style='color: rgb(250, 99, 184)'>T</span>
-                <span style='color: orange'>O</span>
-                <span style='color: rgb(251, 79, 79)'>U</span>
-                <span style='color: rgb(156, 60, 215)'>R</span>
-            </h2>
-            <h2 class="cs-title">
-                <span style='color: rgb(43, 42, 42)'>C</span>
-                <span style='color: grey'>O</span>
-                <span style='color: rgb(141, 54, 54)'>U</span>
-                <span style='color: #5283f8'>T</span>
-                <span style='color: rgb(189, 198, 189)'>U</span>
-                <span style='color: rgb(119, 228, 226)'>R</span>
-                <span style='color: rgb(2, 2, 116)'>E</span>
+                <span style='color: rgb(250, 99, 184)'>T</span><span style='color: orange'>O</span><span style='color: rgb(251, 79, 79)'>U</span><span style='color: rgb(156, 60, 215)'>R</span>
+                <span style='color: rgb(43, 42, 42)'>C</span><span style='color: grey'>O</span><span style='color: rgb(141, 54, 54)'>U</span><span style='color: #5283f8'>T</span><span style='color: rgb(189, 198, 189)'>U</span><span style='color: rgb(119, 228, 226)'>R</span><span style='color: rgb(2, 2, 116)'>E</span>
             </h2>
             </span>
         </div>
-        <ul class="cs-card-group">
-            <li>
-            <div class="cs-gallery">
-                <!--Picture 1-->
-                <picture class="cs-image">
-                    <a href="https://www.amazon.com/Cats-Art-Coloring-Book-featuring/dp/B0DYDJ2KRM/ref=sr_1_1?crid=3OD5S3IMT8CO8&dib=eyJ2IjoiMSJ9.fVBg4aDUir6jzUTyC-3M3CENRngcoWBTtMRolDWV5mHH9luQrqQyrxZMytWY7fVfFHesiL3LJEWIl9oylFUDd3ydi8Qp9m32CC9_LIo2egG1-iaVsjT-tPFG7B-s_BU4l1LGJz0UDnFIKpSDHKYw6Gf9VktgbKNRIZ4KxFzK_kdCdxV2Di0gkl4ngX3u3x6kYDgcZ_sf2Ddm0YVC1TgdPGlpb_umHcjkW-vs9x78v2o.513Qt3QQMjq5Qkyao_5D7e0awNVnvMfD0HVSbqO5XPY&dib_tag=se&keywords=moth+and+muse&qid=1743085334&sprefix=moth+and+muse%2Caps%2C95&sr=8-1">
-                    <source media="(max-width: 600px)" srcset={Book.src}>
-                    <source media="(min-width: 601px)" srcset={Book.src}>
-                    <img loading="lazy" decoding="async" src={Book.src} alt="" width="272" height="320" /></a>
-                </picture>
-            </li>
-            <li>
-            <p class="cs-text-pic-header">
-                Tour Couture by Kimberly Macnider
-            </p>
-            <p class="cs-text-pic-body">
-                A book about Fashion
-            </p>
-        </li>
-        </ul>
     </div>
     <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset={Taylor_Snake.src}>
-        <source media="(min-width: 601px)" srcset={Taylor_Snake.src}>
-        <img loading="lazy" decoding="async" src={Taylor_Snake.src} alt="" width="1024" height="894">
+        <source media="(max-width: 600px)" srcset={Confetti.src}>
+        <source media="(min-width: 601px)" srcset={Confetti.src}>
+        <img loading="lazy" decoding="async" src={Confetti.src} alt="" width="1024" height="894">
     </picture>
 </section>
 
@@ -102,17 +72,17 @@ body {
     letter-spacing: .1em;
     font-weight: 700;
     color: #bd98d2;
-    margin-bottom: 0.25rem;
     display: block;
 }
 
 .cs-title {
-    font-size: var(--headerFontSize);
+    font-family: serif;
+    font-size: 5rem;
     font-weight: 900;
     line-height: 1.2em;
     text-align: inherit;
     max-width: 43.75rem;
-    margin: 0 0 1rem 0;
+    margin: 0 0 0 0;
     color: #5283f8;
     position: relative;
 }
@@ -145,7 +115,7 @@ body {
     /* 240px - 480px top */
     /* 60px - 100px bottom */
     /* 16px left & right */
-    padding: clamp(15rem, 30vw, 30rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    padding-top: 30%;
     background-color: #FAF6F2;
     overflow: hidden;
     position: relative;
@@ -154,7 +124,6 @@ body {
     content: "";
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 3.06%, #FFF 20.29%);
     position: absolute;
     top: 0;
     left: 0;
@@ -246,7 +215,6 @@ body {
   }
   #meet-team-2071 .cs-background img {
     width: 100%;
-    opacity: 0.6;
     /* makes image act as a background image */
     object-fit: cover;
     object-position: top;
@@ -258,7 +226,6 @@ body {
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #meet-team-2071:before {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 19.7%, #FFF 45.39%);
   }
   #meet-team-2071 .cs-card-group {
     gap: 2.5rem 5rem;
@@ -275,7 +242,6 @@ body {
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #meet-team-2071:before {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 19.7%, rgba(255, 255, 255, 0.92) 59.51%);
   }
   #meet-team-2071 .cs-container {
     max-width: 80rem;
