@@ -15,7 +15,7 @@ import Taylor_Snake from '../assets/taylor snake.png';
                         <a href="https://www.amazon.com/dp/B0F37QLWRK/ref=sr_1_1?crid=2TJ71MYF19T24&dib=eyJ2IjoiMSJ9.Gy9ZpXRWylEOX4dWQ-y3lay5OalN59pkjq_HhxGguoSU_najt9zC__fno2q3ce5wpTWJl-mNmAc5AWBbK52Jhg.QrjYZu3Qrq9pblkhZs498Yc3FfkG7Hmho1xcI3lLdzs&dib_tag=se&keywords=tour+couture&qid=1743601943&sprefix=tour+couture%2Caps%2C90&sr=8-1">
                         <source media="(max-width: 600px)" srcset={Book.src}>
                         <source media="(min-width: 601px)" srcset={Book.src}>
-                        <img loading="lazy" decoding="async" src={Book.src} alt="" width="272" height="320" /></a>
+                        <img loading="lazy" decoding="async" src={Book.src} alt="" width="350" height="450" /></a>
                     </picture>
                 </div>
             </li>
@@ -137,8 +137,8 @@ body {
 .cs-gallery{
     width: 100%;
     height: 100%;
-    padding-bottom: 2em;
-    margin-bottom: 1.8em;
+    position: relative;
+    bottom: 4.4em;
 }
 
 /* Mobile - 360px */
@@ -170,7 +170,6 @@ body {
     align-items: center;
     /* 48px - 64px */
     padding-top: 3%;
-    padding-bottom: 3%;
     position: relative;
     z-index: 1;
   }
@@ -240,7 +239,7 @@ body {
     /* makes image act as a background image */
     object-fit: cover;
     object-position: top;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
   }
@@ -301,7 +300,7 @@ body {
     position: relative;
     z-index: 1;
     transition: color 0.3s;
-    margin-left: 11em;
+    left: 8.6em;
 }
 .cs-button-6:before {
     content: "";
